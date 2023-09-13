@@ -4,16 +4,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Website Pemerintahan Desa Pelangwot, Kec. Laren, Lamongan</title>
-        <meta name="og:image" content="https://itskesicme.ac.id/assets/images/logo-footer.png" />
         <link rel="canonical" href="//" />
-        <link rel="icon" type="image/x-icon" href="https://itskesicme.ac.id/assets/images/favicon.ico" />
+        <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png"/>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+        <script src="js/lazysizes.min.js"></script>
         <script>
 	    tailwind.config = {
 	      theme: {
@@ -41,7 +41,7 @@
                                         d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"
                                     />
                                 </svg>
-                                <p class="text-[11px] lg:text-[13px] mr-5 ml-1">+62858 5975 8188 (Pak Muid)</p>
+                                <p class="text-[11px] lg:text-[13px] mr-5 ml-1">+6285859758188</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
                                     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path
@@ -138,27 +138,27 @@
         <div class="mt-[90px] sm:mt-[100px] md:mt-[110px]">
             <section class="bg-white">
                 <div class="lg:flex lg:flex-wrap relative">
-                    <div id="box-slider" class="w-full h-[480px] bg-violet-400 z-20 relative">
+                    <div id="box-slider" class="w-full h-[248px] md:h-[480px] bg-violet-400 z-20 relative">
                         <div class="swiffy-slider">
                             <ul class="slider-container">
                                 <li>
                                     <a href="#" target="_blank">
-                                    	<img data-src="assets/banner-1.jpg" class="lazyload w-full h-[480px] object-cover slider-item" />
+                                    	<img data-src="assets/banner-1.jpg" class="lazyload w-full h-[248px] md:h-[480px] object-cover slider-item" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" target="_blank">
-                                    	<img data-src="assets/banner-2.jpg" class="lazyload w-full h-[480px] slider-item" />
+                                    	<img data-src="assets/banner-2.jpg" class="lazyload w-full h-[248px] md:h-[480px] object-cover slider-item" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" target="_blank">
-                                    	<img data-src="assets/banner-3.jpg" class="lazyload w-full h-[480px] slider-item" />
+                                    	<img data-src="assets/banner-3.jpg" class="lazyload w-full h-[248px] md:h-[480px] object-cover slider-item" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" target="_blank">
-                                        <img data-src="assets/banner-4.jpg" class="lazyload w-full h-[480px] slider-item" />
+                                        <img data-src="assets/banner-4.jpg" class="lazyload w-full h-[248px] md:h-[480px] object-cover slider-item" />
                                     </a>
                                 </li>
 
@@ -507,6 +507,16 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-        <script src="https://itskesicme.ac.id/script.js"></script>
+        <script type="text/javascript">
+        const hamburger = document.querySelector('#menu-botton');
+        const navMenu = document.querySelector('#nav-menu');
+        const navOverlay = document.querySelector('#nav-overlay');
+
+        hamburger.addEventListener('click', function () {
+          hamburger.classList.toggle('menu-botton-active');
+          navMenu.classList.toggle('hidden');
+          navOverlay.classList.toggle('hidden');
+        });
+        </script>
     </body>
 </html>
